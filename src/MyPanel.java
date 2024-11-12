@@ -22,6 +22,14 @@ public class MyPanel extends JPanel {
         outlist = new ArrayList<Rectangle>();
         for(String cifra:arr){
             switch (cifra){
+                case "0":
+                    segment("1",false);
+                    segment("2",false);
+                    segment("4",false);
+                    segment("5",false);
+                    segment("6",false);
+                    segment("7",false);
+
                 case "1":
                     segment("2",false);
                     segment("4",false);
@@ -53,6 +61,19 @@ public class MyPanel extends JPanel {
                     segment("4",false);
                     segment("5",false);
                     break;
+                case "6":
+                    segment("1",false);
+                    segment("3",false);
+                    segment("4",false);
+                    segment("5",false);
+                    segment("6",false);
+                    segment("7",false);
+                    break;
+                case "7":
+                    segment("1",false);
+                    segment("2",false);
+                    segment("4",false);
+                    break;
                 case "8":
                     segment("1",false);
                     segment("2",false);
@@ -61,8 +82,15 @@ public class MyPanel extends JPanel {
                     segment("5",false);
                     segment("6",false);
                     segment("7",false);
-                    segment("8",false);
-
+                    break;
+                case "9":
+                    segment("1",false);
+                    segment("2",false);
+                    segment("3",false);
+                    segment("4",false);
+                    segment("5",false);
+                    segment("7",false);
+                    break;
             }
             x = x +step + width;
         }
